@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Joan',serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grid{
+border: 2px solid black;
+padding: 10px;
+grid-gap: 10px;
+display: block;
+background-color: aquamarine;
+}
