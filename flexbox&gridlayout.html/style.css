@@ -1,0 +1,35 @@
+:root{
+    --tamanho: max-width:1200px;
+}
+
+$global-max-width-raw: 1200;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    ".      main    .   "
+    "footer footer footer";
+    grid-template-columns: 1fr $global-max-width-raw 1fr;
+}
+
+.l-header{
+background: red;
+grid-area: header;
+}
+
+.l-main{
+    background: blue;
+    grid-area: main;
+
+}
+
+.l-footer{
+    background: green;
+    grid-area: footer;
+
+}
