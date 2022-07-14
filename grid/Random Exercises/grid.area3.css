@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.a{
+grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+
+h1{
+    margin: 20px;
+}
+
+.grid1{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "a  b"
+    "c  d";
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    padding: 10px;
+    background-color: red;
+    border: 2px black solid;
+}
+
+.e{
+grid-area: e;
+}
+.f{
+grid-area: f;
+}
+.g{
+grid-area: g;
+}
+
+.mother{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-areas: 
+    "e e e e"
+    "f f g g";
+    gap: 10px;
+
+}
+.son{
+ border: 1px solid blue;
+ background-color: #fff;
+
+}
